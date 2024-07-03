@@ -17,7 +17,7 @@ function PatientDetails({ patient }: PatientDetailsProps) {
       <PatientDetailItem label="Email" data={patient.email} />
       <PatientDetailItem label="Fecha de Alta" data={patient.date.toString()} />
       <PatientDetailItem label="Sintomas" data={patient.symptoms} />
-      <div className=" flex justify-between gap-3 mt-10">
+      <div className=" flex flex-col lg:flex-row justify-between gap-3 mt-10">
         <button
           onClick={() => getPatientById(patient.id)}
           type="button"
